@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="dangki.css" rel="stylesheet" type="text/css" />
+<script src="dangki.js" type="text/javascript"></script>
+</head>
+
+<body>
+    
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Register</button>
+
+	<form id="id01" class="modal" name="formdk">
+
+    	<div class="bodydangki">
+        
+        	<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;
+            </span>
+            
+        	<div class="rows" style="padding-top:20px;">
+        		<div class="left">Tên đăng nhâp:</div>
+            	<div class="right">
+                   <input type="text" name="dangnhap" id="dn" placeholder="Nhập tài khoản" maxlength="100" size="30" class="box"/>
+                </div>
+            </div>
+            
+            <div class="rows">
+        		<div class="left">Mật khẩu:</div>
+            	<div class="right">
+                	<input type="password" name="matkhau" placeholder="Nhập mật khẩu" minlength="5" size="30" class="box"/>
+                </div>
+            </div>
+            
+            <div class="ghichu">
+        		<div class="ghichu2"></div>
+            	<div class="right">(Có ít nhất 5 kí tự)</div>
+            </div>
+            
+            <div class="rows">
+        		<div class="left">Nhắc lại mật khẩu:</div>
+            	<div class="right">
+                	<input type="password" name="matkhau" placeholder="Nhập lại mật khẩu" minlength="5" size="30" class="box"/>
+                </div>
+            </div>
+            
+            <div class="rows">
+        		<div class="left">Họ và tên:</div>
+            	<div class="right">
+                	<input type="text" name="ht" placeholder="Nhập họ tên" size="30" class="box"/>
+                </div>
+            </div>
+            
+            <div class="rows">
+        		<div class="left">Email:</div>
+            	<div class="right">
+                	<input type="email" name="mail" placeholder="Nhập email" size="30" class="box"/>
+                </div>
+            </div>
+            
+            <div class="rows">
+        		<div class="left">Số điện thoại:</div>
+            	<div class="right">
+                	<input type="text" name="sdt" placeholder="Nhập số điện thoại" maxlength="10" size="30" class="box"/>
+                </div>
+            </div>
+            
+            <div class="ghichu">
+        		<div class="ghichu2">Giới tính:</div>
+            	<div class="right">
+                	<input type="radio" name="gioitinh" checked="Nam" />Nam
+                    <input type="radio" name="gioitinh" />Nữ
+                </div>
+            </div>
+            
+            
+            
+            <div class="rows" style="padding-top:20px; padding-bottom:20px;">
+        		<div class="left"></div>
+            	<div class="right">
+                	<input type="button" name="dangki" value="Đăng kí" class="checkboxdk" onclick="nguoidung()"/>
+                    <input type="reset" name="xoa" value="Xóa" class="checkboxdk"/>
+                </div>
+            </div>
+            
+        </div>
+    </form>
+
+    
+</body>
+</html>

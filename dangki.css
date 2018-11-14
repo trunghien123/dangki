@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* CSS Document */
+.bodydangki
+{
+	border-radius:10px;
+	width:600px;
+	margin:auto;
+	background:url(img/bgrr.jpg) no-repeat;
+	
+	
+}
+.rows
+{
+	height:50px;
+	width:600px;
+	
+}
+.left
+{
+	float:left;
+	width:200px;
+	height:50px;
+	text-align:right;
+	line-height:50px;
+		
+}
+.right
+{
+	float:left;	
+	
+}
+.box{padding:8px; margin:7px 0 0 3px; border-radius:6px; border:0;}
+.ghichu{width:600px; height:25px}
+.ghichu2{float:left; width:200px; height:20px;text-align:right;margin-right:3px}
+.checkboxdk
+{
+	border:0;
+	
+	background:#CC6;
+	cursor:pointer;
+	width:95px;
+	height:40px;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* The Close Button (x) */
+.close {
+	padding-right:5px;
+	float:right;
+	right: 358px;
+	top: 7px;
+	color: #000;
+	font-size: 35px;
+	font-weight: bold;
+	height: 33px;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+
+
