@@ -1,5 +1,14 @@
 @charset "utf-8";
 /* CSS Document */
+
+* {
+	font-family: sans-serif;
+}
+
+#doDaiMk, input {
+	transition-duration: .5s;
+}
+
 .bodydangki
 {
 	border-radius:10px;
@@ -22,16 +31,19 @@
 	height:50px;
 	text-align:right;
 	line-height:50px;
-		
+	
+	font-weight: 600;
 }
 .right
 {
+	/* font-size: 25px; */
 	float:left;	
 	
 }
 .box{padding:8px; margin:7px 0 0 3px; border-radius:6px; border:0;}
-.ghichu{width:600px; height:25px}
-.ghichu2{float:left; width:200px; height:20px;text-align:right;margin-right:3px}
+	/* css cua div phan gioi tinh */
+/*.ghichu{width:600px; height:25px}
+.ghichu2{float:left; width:200px; height:20px;text-align:right;margin-right:3px;font-weight: 600}*/
 .checkboxdk
 {
 	border:0;

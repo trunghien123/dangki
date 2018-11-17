@@ -7,12 +7,11 @@
 <script src="dangki.js" type="text/javascript"></script>
 </head>
 
-<body>
-    
+<body>  
 
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Register</button>
+<button onclick="document.getElementById('id01').style.display='block'">Register</button>
 
-	<form id="id01" class="modal" name="formdk">
+	<form method="post" id="id01" class="modal" name="formdk" onsubmit="return nguoidung()">
 
     	<div class="bodydangki">
         
@@ -20,66 +19,82 @@
             </span>
             
         	<div class="rows" style="padding-top:20px;">
-        		<div class="left">Tên đăng nhâp:</div>
+        		<div class="left">Tên đăng nhập:</div>
             	<div class="right">
-                   <input type="text" name="dangnhap" id="dn" placeholder="Nhập tài khoản" maxlength="100" size="30" class="box"/>
+                   <input type="text" name="dangnhap" id="dn" placeholder="Nhập tài khoản" maxlength="100" size="30" class="box" required /> *
                 </div>
             </div>
             
             <div class="rows">
         		<div class="left">Mật khẩu:</div>
             	<div class="right">
-                	<input type="password" name="matkhau" placeholder="Nhập mật khẩu" minlength="5" size="30" class="box"/>
+                	<input type="password" name="matkhau" placeholder="Nhập mật khẩu" minlength="5" size="30" class="box" onkeyup="checkMatKhauKhop(); checkDoDaiMatKhau();" required/> *
                 </div>
             </div>
-            
-            <div class="ghichu">
+                    <!-- su dung div -->
+            <!-- <div class="ghichu">
         		<div class="ghichu2"></div>
-            	<div class="right">(Có ít nhất 5 kí tự)</div>
-            </div>
-            
+            	<div id="doDaiMk" class="right">(Có ít nhất 5 kí tự)</div>
+            </div> -->
+                    <!-- Su dung table -->
+            <table width="600px" height="20px" >
+                <tr>
+                    <td width="202"></td>
+                    <td width="386" class="right" id="doDaiMk">(Có ít nhất 5 kí tự)</td>
+                </tr>
+            </table>
+
             <div class="rows">
-        		<div class="left">Nhắc lại mật khẩu:</div>
+       		  <div class="left">Nhắc lại mật khẩu:</div>
             	<div class="right">
-                	<input type="password" name="matkhau" placeholder="Nhập lại mật khẩu" minlength="5" size="30" class="box"/>
+                	<input type="password" name="matkhau2" placeholder="Nhập lại mật khẩu" minlength="5" size="30" class="box"  onkeyup="checkMatKhauKhop()" required/> *
                 </div>
             </div>
             
             <div class="rows">
         		<div class="left">Họ và tên:</div>
             	<div class="right">
-                	<input type="text" name="ht" placeholder="Nhập họ tên" size="30" class="box"/>
+                	<input type="text" name="ht" placeholder="Nhập họ tên" size="30" class="box" required/> *
                 </div>
             </div>
             
             <div class="rows">
         		<div class="left">Email:</div>
             	<div class="right">
-                	<input type="email" name="mail" placeholder="Nhập email" size="30" class="box"/>
+                	<input type="email" name="mail" placeholder="Nhập email" size="30" class="box" onkeyup="checkEmail()" required /> *
                 </div>
             </div>
             
             <div class="rows">
         		<div class="left">Số điện thoại:</div>
             	<div class="right">
-                	<input type="text" name="sdt" placeholder="Nhập số điện thoại" maxlength="10" size="30" class="box"/>
+                	<input type="text" name="sdt" id="sdd" placeholder="Nhập số điện thoại" maxlength="12" size="30" class="box" onkeyup="checkSodienthoai()" required />
                 </div>
             </div>
-            
-            <div class="ghichu">
+                        <!-- su dung div -->
+           <!--  <div class="ghichu">
         		<div class="ghichu2">Giới tính:</div>
             	<div class="right">
                 	<input type="radio" name="gioitinh" checked="Nam" />Nam
                     <input type="radio" name="gioitinh" />Nữ
                 </div>
-            </div>
-            
+            </div> -->
+                        <!-- Su dung table -->
+            <table width="600px" height="20px" >
+                <tr>
+                    <td width="198" align="right" ><b>Giới tính: </b></td>
+                    <td width="390" class="right" >
+                        <input type="radio" name="gioitinh" checked="Nam" />Nam
+                        <input type="radio" name="gioitinh" />Nữ
+                    </td>
+                </tr>
+            </table>
             
             
             <div class="rows" style="padding-top:20px; padding-bottom:20px;">
         		<div class="left"></div>
             	<div class="right">
-                	<input type="button" name="dangki" value="Đăng kí" class="checkboxdk" onclick="nguoidung()"/>
+                	<input type="submit" name="dangki" value="Đăng kí" class="checkboxdk" />
                     <input type="reset" name="xoa" value="Xóa" class="checkboxdk"/>
                 </div>
             </div>
